@@ -9,7 +9,7 @@ from tkinter import *
 import random
 import time
 
-
+#
 class Ball:
     def __init__(self, canvas, color):
         self.canvas = canvas
