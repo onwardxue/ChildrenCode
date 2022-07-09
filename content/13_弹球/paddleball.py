@@ -36,12 +36,18 @@ class Ball:
 
 
 if __name__ == '__main__':
+    # 创建游戏的画布
     tk = Tk()
     tk.title('Game')
+    # 固定窗口尺寸
     tk.resizable(0, 0)
+    # 把当前窗口放在所有窗口之前
     tk.wm_attributes('-topmost', 1)
+    # 设置窗口尺寸
     canvas = Canvas(tk, width=500, height=400, bd=0, highlightthickness=0)
+    #  让画布尺寸按前一行给出的宽度和高度的参数调整其自身大小
     canvas.pack()
+    # 让游戏动画做好初始化
     tk.update()
 
     ball = Ball(canvas, 'red')
